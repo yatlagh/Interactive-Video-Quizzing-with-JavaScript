@@ -1,5 +1,5 @@
-/* importing google fonts */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -8,46 +8,47 @@
 }
 
 body {
-  background-color: #f8f9fa;
+  background-color: #343541;
+  font-size: 16px;
 }
 
 .card {
   background: #497e92;
-  border: 10px solid;
+  border: 0.625rem solid;
   border-color: #d8dedf;
 }
 
 .fa-solid.fa-graduation-cap {
   color: #497e92;
 }
+
 .btn,
 .next_btn {
   background: #497e92;
   border: none !important;
-  padding: 0 40px;
-  color: white;
+  padding: 0 2.5rem;
+  color: #fff;
 }
-.btn,
+
+.btn:hover,
 .next_btn:hover {
   background: #365f6e;
 }
 
-/* Change the control bar background color */
 .video-js .vjs-control-bar {
   background-color: #3b4045;
-  font-size: 1.5em;
+  font-size: 1.5rem;
 }
 
-/* Increase size of Video.js icons */
 .video-js .vjs-icon {
-  font-size: 1.5em;
+  font-size: 1.5rem;
 }
 
-/* Change the progress bar color */
 .video-js .vjs-play-progress,
 .video-js .vjs-volume-level {
   background-color: #92c68c;
 }
+
 .video-js {
   background-color: #2f3338;
 }
@@ -56,43 +57,50 @@ body {
   padding-top: 56.25%;
 }
 
-/* Change background color to blue */
 .video-js .vjs-big-play-button {
   background-color: #92c68c;
-  font-size: 4em;
+  font-size: 4rem;
   border: none;
-  border-radius: 5px;
+  border-radius: 0.3125rem;
 }
 
 .progress {
   background-color: #ffffff42;
 }
+
 .progress-bar {
   background-color: #fff;
 }
+
 .start.active {
-  color: white;
+  color: #fff;
 }
+
 .start {
   transform: translate(-50%, -30%);
-  font-size: 20px;
+  font-size: 1.25rem;
   color: #ffffff42;
   background-color: #497e92;
-  padding: 0 10px;
-  border-radius: 5px;
+  padding: 0 0.625rem;
+  border-radius: 0.3125rem;
 }
+
 .start-20 {
   left: 20%;
 }
+
 .start-40 {
   left: 40%;
 }
+
 .start-60 {
   left: 60%;
 }
+
 .start-80 {
   left: 80%;
 }
+
 .start-100 {
   left: 100%;
 }
@@ -100,10 +108,11 @@ body {
 .embed-responsive {
   position: relative;
 }
+
 .quiz {
   display: none;
   position: absolute;
-  background-color: white;
+  background-color: #fff;
   z-index: 10;
   width: 100%;
   height: 100%;
@@ -141,10 +150,10 @@ body {
 }
 
 .start_btn button {
-  font-size: 25px;
+  font-size: 1.5625rem;
   font-weight: 500;
   color: #007bff;
-  padding: 15px 30px;
+  padding: 0.9375rem 1.875rem;
   outline: none;
   border: none;
   background: #fff;
@@ -159,55 +168,56 @@ body {
 }
 
 .info_box .info-title {
-  height: 60px;
+  height: 3.75rem;
   width: 100%;
-  border-bottom: 1px solid lightgrey;
+  border-bottom: 0.0625rem solid #d3d3d3;
   display: flex;
   align-items: center;
-  padding: 0 30px;
-  border-radius: 5px 5px 0 0;
-  font-size: 20px;
+  padding: 0 1.875rem;
+  border-radius: 0.3125rem 0.3125rem 0 0;
+  font-size: 1.25rem;
   font-weight: 600;
 }
 
 .info_box .info-list {
-  padding: 15px 30px;
+  padding: 0.9375rem 1.875rem;
 }
 
 .info_box .info-list .info {
-  margin: 5px 0;
-  font-size: 17px;
+  margin: 0.3125rem 0;
+  font-size: 1.0625rem;
 }
 
 .info_box .info-list .info span {
   font-weight: 600;
   color: #007bff;
 }
+
 .info_box .buttons {
-  height: 60px;
+  height: 3.75rem;
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  padding: 0 30px;
-  border-top: 1px solid lightgrey;
+  padding: 0 1.875rem;
+  border-top: 0.0625rem solid #d3d3d3;
 }
 
 .info_box .buttons button {
-  margin: 0 5px;
-  height: 40px;
-  width: 100px;
-  font-size: 16px;
+  margin: 0 0.3125rem;
+  height: 2.5rem;
+  width: 6.25rem;
+  font-size: 1rem;
   font-weight: 500;
   cursor: pointer;
   border: none;
   outline: none;
-  border-radius: 5px;
-  border: 1px solid #007bff;
+  border-radius: 0.3125rem;
+  border: 0.0625rem solid #007bff;
   transition: all 0.3s ease;
 }
 
 .quiz_box {
-  border-radius: 5px;
+  border-radius: 0.3125rem;
   transform: translate(-50%, -50%) scale(0.9);
   opacity: 0;
   pointer-events: none;
@@ -217,81 +227,81 @@ body {
 .quiz_box header {
   position: relative;
   z-index: 2;
-  height: 70px;
-  padding: 0 30px;
-  border-radius: 5px 5px 0 0;
+  height: 4.375rem;
+  padding: 0 1.875rem;
+  border-radius: 0.3125rem 0.3125rem 0 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
 .quiz_box header .title {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 600;
 }
 
 .quiz_box header .timer {
   color: #004085;
-  border: 1px solid #b8daff;
-  height: 45px;
-  padding: 0 8px;
-  border-radius: 5px;
+  border: 0.0625rem solid #b8daff;
+  height: 2.8125rem;
+  padding: 0 0.5rem;
+  border-radius: 0.3125rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 145px;
+  width: 9.0625rem;
 }
 
 .quiz_box header .timer .time_left_txt {
   font-weight: 400;
-  font-size: 17px;
+  font-size: 1.0625rem;
   user-select: none;
 }
 
 .quiz_box header .timer .timer_sec {
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 500;
-  height: 30px;
-  width: 45px;
+  height: 1.875rem;
+  width: 2.8125rem;
   color: #fff;
-  border-radius: 5px;
-  line-height: 30px;
+  border-radius: 0.3125rem;
+  line-height: 1.875rem;
   text-align: center;
   background: #343a40;
-  border: 1px solid #343a40;
+  border: 0.0625rem solid #343a40;
   user-select: none;
 }
 
 .quiz_box header .time_line {
   position: absolute;
-  bottom: 0px;
-  left: 0px;
-  height: 3px;
+  bottom: 0;
+  left: 0;
+  height: 0.1875rem;
   background: #007bff;
   width: 0;
 }
 
 section {
-  padding: 25px 30px 20px 30px;
+  padding: 1.5625rem 1.875rem 1.25rem;
 }
 
 section .que_text {
-  font-size: 25px;
+  font-size: 1.5625rem;
   font-weight: 600;
 }
 
 section .option_list {
-  padding: 20px 0px;
+  padding: 1.25rem 0;
   display: block;
 }
 
 section .option_list .option {
-  background: white;
-  border: 1px solid #c0cdd6;
-  border-radius: 5px;
-  padding: 8px 15px;
-  font-size: 17px;
-  margin-bottom: 15px;
+  background: #fff;
+  border: 0.0625rem solid #c0cdd6;
+  border-radius: 0.3125rem;
+  padding: 0.5rem 0.9375rem;
+  font-size: 1.0625rem;
+  margin-bottom: 0.9375rem;
   cursor: pointer;
   transition: all 0.3s ease;
   display: flex;
@@ -299,29 +309,29 @@ section .option_list .option {
 }
 
 section .option_list .option span {
-  padding-left: 10px;
+  padding-left: 0.3125rem;
 }
 
 section .option_list .option:last-child {
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 section .option_list .option:hover {
   color: #51758c;
   background: #f1f2f3;
-  border: 1px solid #c0cdd6;
+  border: 0.0625rem solid #c0cdd6;
 }
 
 section .option_list .option.correct {
   box-sizing: border-box;
   background: #e9f9ec;
-  border: 2px solid #0ebf29;
+  border: 0.125rem solid #0ebf29;
 }
 
 section .option_list .option.incorrect {
   box-sizing: border-box;
   background: #feeff1;
-  border: 2px solid #f25160;
+  border: 0.125rem solid #f25160;
 }
 
 section .option_list .option.disabled {
@@ -329,15 +339,15 @@ section .option_list .option.disabled {
 }
 
 section .option_list .option .icon {
-  height: 26px;
-  width: 26px;
-  border: 2px solid transparent;
+  height: 1.625rem;
+  width: 1.625rem;
+  border: 0.125rem solid transparent;
   border-radius: 50%;
   text-align: center;
-  font-size: 13px;
+  font-size: 0.8125rem;
   pointer-events: none;
   transition: all 0.3s ease;
-  line-height: 24px;
+  line-height: 1.5rem;
 }
 
 .option_list .option .icon.tick {
@@ -351,12 +361,12 @@ section .option_list .option .icon {
 }
 
 footer {
-  height: 60px;
-  padding: 0 30px;
+  height: 3.75rem;
+  padding: 0 1.875rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-top: 1px solid lightgrey;
+  border-top: 0.0625rem solid #d3d3d3;
 }
 
 footer .total_que span {
@@ -366,26 +376,26 @@ footer .total_que span {
 
 footer .total_que span p {
   font-weight: 500;
-  padding: 0 5px;
+  padding: 0 0.3125rem;
 }
 
 footer .total_que span p:first-child {
-  padding-left: 0px;
+  padding-left: 0;
 }
 
 footer button {
-  height: 40px;
-  padding: 0 13px;
-  font-size: 18px;
+  height: 2.5rem;
+  padding: 0 0.8125rem;
+  font-size: 1.125rem;
   font-weight: 400;
   cursor: pointer;
   border: none;
   outline: none;
   color: #fff;
-  border-radius: 5px;
+  border-radius: 0.3125rem;
   background: #007bff;
-  border: 1px solid #007bff;
-  line-height: 10px;
+  border: 0.0625rem solid #007bff;
+  line-height: 0.625rem;
   opacity: 0;
   pointer-events: none;
   transform: scale(0.95);
@@ -412,11 +422,8 @@ footer button.show {
 }
 
 .result_box {
-  background: #fff;
-  border-radius: 5px;
+  border-radius: 0.3125rem;
   display: flex;
-  padding: 25px 30px;
-  width: 450px;
   align-items: center;
   flex-direction: column;
   justify-content: center;
@@ -427,55 +434,53 @@ footer button.show {
 }
 
 .result_box .icon {
-  font-size: 100px;
+  font-size: 6rem;
   color: #007bff;
-  margin-bottom: 10px;
+  margin-bottom: 1.5625rem;
 }
 
 .result_box .complete_text {
-  font-size: 20px;
-  font-weight: 500;
-}
-
-.result_box .score_text span {
-  display: flex;
-  margin: 10px 0;
-  font-size: 18px;
+  font-size: 1.25rem;
   font-weight: 500;
 }
 
 .result_box .score_text span p {
-  padding: 0 4px;
+  padding: 0 0.25rem;
   font-weight: 600;
+  margin-bottom: 0;
+  background-color: #e9e9e9;
+  padding: 10px;
+  font-size: 1.2rem;
 }
 
 span.wrong {
   font-weight: 600;
   color: #f25160;
-  font-size: 2em;
+  font-size: 2rem;
 }
+
 span.correct {
   font-weight: 600;
   color: #0dbe29;
-  font-size: 2em;
+  font-size: 2rem;
 }
 
 .result_box .buttons {
   display: flex;
-  margin: 20px 0;
+  margin: 1.25rem 0;
 }
 
 .result_box .buttons button {
-  margin: 0 10px;
-  height: 45px;
-  padding: 0 20px;
-  font-size: 18px;
+  margin: 0 0.625rem;
+  height: 2.8125rem;
+  padding: 0 1.25rem;
+  font-size: 1.125rem;
   font-weight: 500;
   cursor: pointer;
   border: none;
   outline: none;
-  border-radius: 5px;
-  border: 1px solid #007bff;
+  border-radius: 0.3125rem;
+  border: 0.0625rem solid #007bff;
   transition: all 0.3s ease;
 }
 
@@ -497,4 +502,12 @@ span.correct {
 
 .buttons button.quit:hover {
   background: #365f6e;
+}
+
+/* Tablet screens */
+@media only screen and (max-width: 768px) {
+  .quiz_box,
+  .result_box {
+    background: white;
+  }
 }
